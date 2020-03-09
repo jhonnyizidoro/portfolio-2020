@@ -1,0 +1,12 @@
+.navbar
+	+background('/images/backgrounds/navbar.svg', $s: 100% 100%, $p: center, $r: no-repeat)
+	+position(0, 0)
+	filter: drop-shadow($pink-shadow)
+	padding: 20px 130px 60px
+	&__link
+		+font($c: $white, $w: $font-2)
+		background: transparent
+		display: inline-block
+		padding: 20px
+		&:hover
+			text-decoration: underline

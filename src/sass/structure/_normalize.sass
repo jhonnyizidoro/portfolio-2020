@@ -12,6 +12,17 @@ body,
 figure
 	margin: 0
 
+a
+	background-color: transparent
+	color: inherit
+	cursor: pointer
+	text-decoration: none
+	&:visited
+		text-decoration: none
+	&:active,
+	&:hover
+		outline: 0
+
 figure,
 footer,
 header,
@@ -36,8 +47,12 @@ textarea
 
 button
 	-webkit-appearance: button
+	border: none
 	cursor: pointer
 	overflow: visible
+	&:focus,
+	&:active
+		outline: none
 
 button,
 select
