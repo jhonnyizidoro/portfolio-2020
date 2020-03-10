@@ -1,0 +1,39 @@
+.alert
+	+position(0, 0, $p: fixed)
+	+size(100%)
+	+flex(center, center)
+	+font($a: center, $c: $light)
+	animation: blur 3s forwards
+	background: rgba($dark, .7)
+	&__modal
+		animation: transform 400ms forwards
+		background: $darker
+		border-radius: 10px
+		box-shadow: $shadow-2
+		padding: 25px
+		text-align: center
+	&__title
+		+font(1.5rem, $font-2)
+	&__content
+		margin: 7px 0 15px
+	&__close
+		+gradient($orange, $darker-orange)
+		+font($w: $font-2, $c: $white)
+		border-radius: 99px
+		box-shadow: $orange-shadow
+		padding: 10px 25px
+		transition: 350ms
+		&:hover
+			transform: scale(1.05)
+
+@keyframes blur
+	0%
+		backdrop-filter: blur(0)
+	100%
+		backdrop-filter: blur(25px)
+
+@keyframes transform
+	0%
+		transform: scale(0)
+	100%
+		transform: scale(1)
