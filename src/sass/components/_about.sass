@@ -1,0 +1,56 @@
+.about
+	+background('/images/backgrounds/about.svg', $s: 100% 100%, $p: center, $r: no-repeat)
+	color: $lighter
+	filter: drop-shadow($shadow-1)
+	margin-top: 180px
+	padding: 50px 0 200px
+	&__avatar
+		display: block
+		margin: 0 auto
+		width: 280px
+	&__title
+		+font(4rem, $font-3, $a: center)
+	&__text
+		+font(1.2rem, $a: center, $lh: 1.8)
+	&__subtitle
+		+font(2rem, $a: center)
+		margin: 130px 0 50px
+	&__timeline
+		padding-top: 30px
+		position: relative
+		&::after
+			+pseudo
+			+position(0, 50%)
+			+size(7px, 95%)
+			background: $light
+			border-radius: 99px
+	&__timeline__title
+		+font(1.2rem, $font-1)
+	&__timeline__item
+		position: relative
+		width: 50%
+		&::after,
+		&::before
+			+pseudo
+			background: $light
+			border-radius: 99px
+		&::after
+			+size(13px)
+			top: 2px
+		&::before
+			+size(35px, 3px)
+			top: 7px
+		&:nth-child(odd)
+			text-align: right
+			padding-right: 60px
+			&::after
+				right: 30px
+			&::before
+				right: 0
+		&:nth-child(even)
+			margin: 50px 0 50px auto
+			padding-left: 60px
+			&::after
+				left: 30px
+			&::before
+				left: 0
