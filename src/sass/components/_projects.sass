@@ -1,0 +1,43 @@
+.projects
+	&__container
+		max-width: 1000px
+	&__card
+		+background($s: 100% 100%, $p: center, $r: no-repeat)
+		+flex($a: center)
+		color: $white
+		margin-bottom: 80px
+		padding: 30px
+		transition: 250ms
+		&--orange
+			+background('/images/backgrounds/card-horizontal-orange.svg')
+			filter: drop-shadow($orange-shadow)
+		&--blue
+			+background('/images/backgrounds/card-horizontal-blue.svg')
+			filter: drop-shadow($blue-shadow)
+		&--green
+			+background('/images/backgrounds/card-horizontal-green.svg')
+			filter: drop-shadow($green-shadow)
+		&:nth-child(odd)
+			text-align: right
+		&:hover
+			transform: scale(1.02)
+	&__image
+		+size(30%, 100%)
+		border-radius: 10px
+		filter: drop-shadow($shadow-2)
+		margin: 10px
+	&__title
+		+font(2rem, $font-2)
+	&__text
+		line-height: 1.8
+		margin: 10px 0
+	&__link
+		+font($w: $font-2, $c: $dark)
+		box-shadow: $shadow-3
+		background: $white
+		border-radius: 99px
+		display: inline-block
+		padding: 5px 14px
+		transition: 250ms
+		&:hover
+			transform: scale(1.05)
