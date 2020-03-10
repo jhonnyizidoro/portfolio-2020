@@ -1,0 +1,33 @@
+.skills
+	&__title
+		+font(4rem, $font-3, $a: center, $c: $lighter)
+		margin: 50px 0
+		text-shadow: $shadow-3
+	&__container
+		+flex(space-around, $g: 1, $b: 0)
+	&__card
+		+background($s: 100% 100%, $p: center, $r: no-repeat)
+		+font($a: center, $c: $white)
+		height: 100%
+		margin: 0 40px
+		transition: 250ms
+		padding: 25px 15px
+		&--blue
+			+background('/images/backgrounds/card-vertical-blue.svg')
+			filter: drop-shadow($blue-shadow)
+		&--yellow
+			+background('/images/backgrounds/card-vertical-yellow.svg')
+			filter: drop-shadow($orange-shadow)
+		&--purple
+			+background('/images/backgrounds/card-vertical-purple.svg')
+			filter: drop-shadow($purple-shadow)
+		&:hover
+			transform: scale(1.02)
+	&__image
+		filter: invert(1)
+		width: 80px
+	&__subtitle
+		font-size: 2rem
+		margin-bottom: 25px
+	&__list
+		+font(1.3rem, $font-2, $lh: 2)
