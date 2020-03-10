@@ -1,0 +1,37 @@
+.contact
+	+background('/images/backgrounds/contact.svg', $s: 100% auto, $p: 100% 0, $r: no-repeat)
+	color: $light
+	filter: drop-shadow($shadow-1)
+	margin: 250px 0
+	padding: 250px 0 100px
+	position: relative
+	&__title
+		+font(1.7rem, $a: center)
+		+position(0, 50%)
+		background: $darker
+		border-radius: 50%
+		box-shadow: $shadow-1
+		padding: 70px 50px
+		transform: translate(50%, -50%)
+	&__container
+		+flex($g: 1, $b: 0)
+	&__card
+		+font($c: $white, $a: center)
+		border-radius: 25px
+		margin: 0 40px
+		padding: 80px 0
+		transition: 250ms
+		&--instagram
+			background: $instagram-gradient
+			box-shadow: $instagram-shadow
+		&--facebook
+			background: $facebook
+			box-shadow: $facebook-shadow
+		&--whatsapp
+			+gradient($whatsapp-dark, $whatsapp-light)
+			box-shadow: $whatsapp-shadow
+		&:hover
+			transform: scale(1.02)
+	&__subtitle
+		+font(1.4rem, $font-2)
+		margin-bottom: 15px

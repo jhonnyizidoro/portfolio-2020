@@ -1,0 +1,28 @@
+.contact__form
+	margin: 0 auto
+	width: 450px
+	&__title
+		margin: 100px 0 50px
+		text-align: center
+	&__input,
+	&__textarea
+		background: $dark
+		border-radius: 23px
+		font-size: 1.1rem
+		margin-bottom: 15px
+		padding: 15px 20px
+		width: 100%
+		&::placeholder
+			color: $light
+	&__textarea
+		height: 10rem
+	&__button
+		+gradient($orange, $darker-orange)
+		+font(1.2rem, $font-2, $c: $white)
+		border-radius: 23px
+		box-shadow: $orange-shadow
+		padding: 14px 0
+		transition: 250ms
+		width: 100%
+		&:hover
+			transform: scale(1.05)
