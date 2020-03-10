@@ -1,20 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1445" height="358" viewBox="0 0 1445 358">
   <defs>
     <linearGradient id="linear-gradient" x1="0.007" y1="0.025" x2="0.993" y2="0.971" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#81fbb8"/>
+      <stop offset="0" stop-color="#23af62"/>
       <stop offset="1" stop-color="#28c76f"/>
     </linearGradient>
     <linearGradient id="linear-gradient-2" x1="0.5" x2="0.494" y2="0.996" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#40d583"/>
-      <stop offset="1" stop-color="#39d57e"/>
+      <stop offset="1" stop-color="#27c56e"/>
     </linearGradient>
   </defs>
   <g id="card-green" transform="translate(-237.015 -2434)">
     <rect id="Rectangle_2" data-name="Rectangle 2" width="1445" height="358" rx="30" transform="translate(237.015 2434)" fill="url(#linear-gradient)"/>
-    <path id="Path_8" data-name="Path 8" d="M159.328,0,318.656,201.666,257.8,263.851H60.858L0,201.666Z" transform="translate(1586.415 2791) rotate(-161)" fill="url(#linear-gradient-2)"/>
-    <rect id="Rectangle_7" data-name="Rectangle 7" width="112" height="42" transform="translate(924 2507)" fill="#2fd478"/>
-    <rect id="Rectangle_10" data-name="Rectangle 10" width="112" height="42" transform="translate(764 2636)" fill="#37e585"/>
-    <rect id="Rectangle_8" data-name="Rectangle 8" width="112" height="42" transform="translate(846 2571)" fill="#34df81"/>
-    <rect id="Rectangle_9" data-name="Rectangle 9" width="112" height="42" transform="translate(686 2700)" fill="#3ee88a"/>
+    <path id="Path_8" data-name="Path 8" d="M152.922,0,305.844,196.954l-58.411,60.732H58.411L0,196.954Z" transform="translate(1576.309 2792) rotate(-161)" fill="url(#linear-gradient-2)"/>
+    <rect id="Rectangle_7" data-name="Rectangle 7" width="112" height="42" transform="translate(924 2507)" fill="#22c96e"/>
+    <rect id="Rectangle_10" data-name="Rectangle 10" width="112" height="42" transform="translate(764 2636)" fill="#22c26a"/>
+    <rect id="Rectangle_8" data-name="Rectangle 8" width="112" height="42" transform="translate(846 2571)" fill="#24c56d"/>
+    <rect id="Rectangle_9" data-name="Rectangle 9" width="112" height="42" transform="translate(686 2700)" fill="#21bc67"/>
   </g>
 </svg>
