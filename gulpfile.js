@@ -30,7 +30,7 @@ task(copy = () => {
 
 task(clean = () => {
 	return pump([
-		src('src'),
+		src('dist'),
 		gulpClean()
 	])
 })
@@ -62,7 +62,7 @@ task(js = () => {
 
 task(pug = () => {
 	return pump([
-		src('src/views/*'),
+		src('src/views/*.pug'),
 		gulpPlumber(),
 		gulpPug(),
 		dest('dist')
@@ -159,4 +159,4 @@ task(server = () => {
 	watch('src/fonts/', series(copy, reload))
 })
 
-exports.watch = series(parallel(sass, js, img, pug, copy, favicon), server)
+exports.watch = series(clean, parallel(sass, js, img, pug, copy, favicon), server)
