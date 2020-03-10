@@ -1,0 +1,5 @@
+const showAlert = () => {}
+
+export {
+	showAlert,
+}
