@@ -10,3 +10,16 @@
 		padding: 20px
 		&:hover
 			text-decoration: underline
+
++tablet
+	.navbar
+		+position($b: 0, $r: 0, $p: fixed)
+		+gradient($pink, $darker-pink)
+		+flex($g: 1)
+		filter: drop-shadow($darker-pink-shadow)
+		padding: 0
+		width: 100%
+		z-index: 1
+		&__link
+			font-weight: $font-1
+			padding: 20px 0

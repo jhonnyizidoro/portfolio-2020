@@ -54,3 +54,26 @@
 				left: 30px
 			&::before
 				left: 0
+
++tablet
+	.about
+		+background('/images/backgrounds/about-mobile.svg')
+		border-radius: 45px 45px 0 0
+		&__timeline
+			&::after
+				left: 0
+		&__timeline__item
+			width: auto
+			&:nth-child(even),
+			&:nth-child(odd)
+				margin: 20px 0
+				padding: 0 0 20px 40px
+				text-align: left
+				&::before
+					width: 20px
+			&:nth-child(odd),
+			&:nth-child(even)
+				&::after
+					left: 20px
+				&::before
+					left: 0

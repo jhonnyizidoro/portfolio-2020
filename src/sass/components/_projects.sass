@@ -45,3 +45,16 @@
 		transition: 250ms
 		&:hover
 			transform: scale(1.05)
+
++tablet
+	.projects
+		&__card
+			border-radius: 30px
+			flex-direction: column
+			text-align: center
+			&:nth-child(odd)
+				text-align: center
+			&:nth-child(even)
+				flex-direction: column-reverse
+		&__image
+			width: 100%
