@@ -2,10 +2,12 @@ const isElement = element => element instanceof Element || element instanceof HT
 const isNodeList = nodeList => nodeList instanceof NodeList && nodeList.length > 0
 const isMobile = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent)
 const isArray = array => array instanceof Array && array.length > 0
+const isIE = () => window.document.documentMode
 
 export {
 	isElement,
 	isNodeList,
 	isMobile,
 	isArray,
+	isIE,
 }

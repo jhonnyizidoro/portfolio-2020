@@ -30,6 +30,8 @@
 		border-radius: 10px
 		filter: drop-shadow($shadow-2)
 		margin: 10px
+	&__content
+		width: 70%
 	&__name
 		+font(2rem, $font-2)
 	&__text
@@ -56,5 +58,6 @@
 				text-align: center
 			&:nth-child(even)
 				flex-direction: column-reverse
-		&__image
+		&__image,
+		&__content
 			width: 100%

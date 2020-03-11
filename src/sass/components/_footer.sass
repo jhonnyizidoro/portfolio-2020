@@ -1,17 +1,22 @@
 .footer
-	+flex(center)
+	+flex(center, $w: wrap)
 	background: $dark
-	padding: 80px 0
+	color: $light
+	padding: 80px 0 100px
 	&__icon
-		+font(1.8rem, $c: $light)
 		border: 2px solid $light
 		border-radius: 50%
+		font-size: 1.8rem
 		margin: 15px
 		padding: 15px
 		transition: 350ms
 		&:hover
 			background: $light
 			color: $dark
+	&__text
+		margin-top: 25px
+		text-align: center
+		width: 100%
 
 +tablet
 	.footer
