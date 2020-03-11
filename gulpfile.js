@@ -28,6 +28,13 @@ task(copy = () => {
 	])
 })
 
+task(seo = () => {
+	return pump([
+		src('src/seo/*'),
+		dest('dist')
+	])
+})
+
 task(clean = () => {
 	return pump([
 		src('dist'),
@@ -156,7 +163,8 @@ task(server = () => {
 	watch('src/images/**/*', series(img, reload))
 	watch('src/favicon/favicon.png', series(favicon, reload))
 	watch('src/views/**/*', series(pug, reload))
-	watch('src/fonts/', series(copy, reload))
+	watch('src/fonts', series(copy, reload))
+	watch('src/seo', series(seo, reload))
 })
 
-exports.watch = series(clean, parallel(sass, js, img, pug, copy, favicon), server)
+exports.watch = series(clean, parallel(seo, sass, js, img, pug, copy, favicon), server)
