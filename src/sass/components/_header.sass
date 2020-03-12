@@ -2,9 +2,9 @@
 	+background('/images/backgrounds/header.svg', $s: 100% 100%, $p: center, $r: no-repeat)
 	color: $light
 	filter: drop-shadow($shadow-1)
-	height: 115vh
+	min-height: 115vh
 	&__container
-		height: 100vh
+		min-height: 100vh
 	&__content
 		+position(50%, 0)
 		+flex(space-around, center)
@@ -37,12 +37,17 @@
 	.header
 		+background('/images/backgrounds/header-mobile.svg')
 		filter: none
+		min-height: 100vh
 		text-align: center
+		padding-top: 50px
 		&__content
 			flex-direction: column
-			top: 35%
+			position: static
+			transform: none
 		&__title__regular
 			font-size: 1.2rem
-			margin-bottom: 50px
+			margin-bottom: 75px
 		&__button
-			top: 75vh
+			margin-top: 75px
+			position: static
+			transform: none
